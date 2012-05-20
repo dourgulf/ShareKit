@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C456BDE91568970F009AAB03 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C456BDE81568970F009AAB03 /* test.png */; };
 		C4C69E0B1568F1BA00DA0A1E /* DefaultSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C951568F1BA00DA0A1E /* DefaultSHKConfigurator.m */; };
 		C4C69E0C1568F1BA00DA0A1E /* SHKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C971568F1BA00DA0A1E /* SHKConfiguration.m */; };
 		C4C69E0D1568F1BA00DA0A1E /* SHKOAuthSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C9B1568F1BA00DA0A1E /* SHKOAuthSharer.m */; };
@@ -167,6 +166,7 @@
 		C4C69EA71568F1BA00DA0A1E /* SHKOAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69E051568F1BA00DA0A1E /* SHKOAuthView.m */; };
 		C4C69EA81568F1BA00DA0A1E /* SHKShareMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69E081568F1BA00DA0A1E /* SHKShareMenu.m */; };
 		C4C69EA91568F1BA00DA0A1E /* SHKViewControllerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69E0A1568F1BA00DA0A1E /* SHKViewControllerWrapper.m */; };
+		C4C6B81C1568F4090076EEF7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C6B81B1568F4090076EEF7 /* test.png */; };
 		C4D2A5DB1567DD10000A8EC9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5DA1567DD10000A8EC9 /* CFNetwork.framework */; };
 		C4D2A5DD1567DD15000A8EC9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5DC1567DD15000A8EC9 /* Twitter.framework */; };
 		C4D2A5DF1567DD1C000A8EC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5DE1567DD1C000A8EC9 /* CoreLocation.framework */; };
@@ -188,7 +188,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C456BDE81568970F009AAB03 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C4C69C941568F1BA00DA0A1E /* DefaultSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSHKConfigurator.h; sourceTree = "<group>"; };
 		C4C69C951568F1BA00DA0A1E /* DefaultSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSHKConfigurator.m; sourceTree = "<group>"; };
 		C4C69C961568F1BA00DA0A1E /* SHKConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKConfiguration.h; sourceTree = "<group>"; };
@@ -503,6 +502,7 @@
 		C4C69E081568F1BA00DA0A1E /* SHKShareMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKShareMenu.m; sourceTree = "<group>"; };
 		C4C69E091568F1BA00DA0A1E /* SHKViewControllerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKViewControllerWrapper.h; sourceTree = "<group>"; };
 		C4C69E0A1568F1BA00DA0A1E /* SHKViewControllerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKViewControllerWrapper.m; sourceTree = "<group>"; };
+		C4C6B81B1568F4090076EEF7 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C4D2A5DA1567DD10000A8EC9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C4D2A5DC1567DD15000A8EC9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		C4D2A5DE1567DD1C000A8EC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -1405,7 +1405,7 @@
 		C4E68F4415671FAE00D5FA81 /* sharekitest */ = {
 			isa = PBXGroup;
 			children = (
-				C456BDE81568970F009AAB03 /* test.png */,
+				C4C6B81B1568F4090076EEF7 /* test.png */,
 				C4D2A6041567EC3C000A8EC9 /* ShareKitDemoConfigurator.h */,
 				C4D2A6051567EC3C000A8EC9 /* ShareKitDemoConfigurator.m */,
 				C4D2A5F01567E09F000A8EC9 /* Readme */,
@@ -1489,7 +1489,6 @@
 				C4E68F5515671FAE00D5FA81 /* G4ViewController_iPhone.xib in Resources */,
 				C4E68F5815671FAE00D5FA81 /* G4ViewController_iPad.xib in Resources */,
 				C4D2A5F11567E09F000A8EC9 /* Readme in Resources */,
-				C456BDE91568970F009AAB03 /* test.png in Resources */,
 				C4C69E191568F1BA00DA0A1E /* SHKSharers.plist in Resources */,
 				C4C69E381568F1BA00DA0A1E /* ShareKit.bundle in Resources */,
 				C4C69E511568F1BA00DA0A1E /* SHKEvernote.md in Resources */,
@@ -1506,6 +1505,7 @@
 				C4C69E791568F1BA00DA0A1E /* renren-logo-top-bar@2x.png in Resources */,
 				C4C69E7A1568F1BA00DA0A1E /* small-button-normal.png in Resources */,
 				C4C69E7B1568F1BA00DA0A1E /* small-button-normal@2x.png in Resources */,
+				C4C6B81C1568F4090076EEF7 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
