@@ -1,0 +1,4 @@
+1. 把ShareKit加到你的工程（可以删除sharekittest文件夹）
+2. 参考G4AppDelegate.m didFinishLaunchingWithOptions: 初始化配置数据
+3. 参考onShareTwitterClicked 指定使用某个service发送
+4. 参考onSharesClicked 用户选择使用那个service发送
