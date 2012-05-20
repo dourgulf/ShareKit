@@ -60,6 +60,7 @@
 	textView.contentInset = UIEdgeInsetsMake(5,5,5,0);
 	textView.backgroundColor = [UIColor whiteColor];	
 	textView.autoresizesSubviews = YES;
+    textView.editable = NO;
 	textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	
 	[self.view addSubview:textView];
