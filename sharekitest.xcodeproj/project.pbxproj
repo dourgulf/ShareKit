@@ -172,7 +172,6 @@
 		C4D2A5DD1567DD15000A8EC9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5DC1567DD15000A8EC9 /* Twitter.framework */; };
 		C4D2A5DF1567DD1C000A8EC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5DE1567DD1C000A8EC9 /* CoreLocation.framework */; };
 		C4D2A5E11567DD30000A8EC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D2A5E01567DD30000A8EC9 /* QuartzCore.framework */; };
-		C4D2A5F11567E09F000A8EC9 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = C4D2A5F01567E09F000A8EC9 /* Readme */; };
 		C4D2A6061567EC3C000A8EC9 /* ShareKitDemoConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D2A6051567EC3C000A8EC9 /* ShareKitDemoConfigurator.m */; };
 		C4E68F3F15671FAE00D5FA81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E68F3E15671FAE00D5FA81 /* UIKit.framework */; };
 		C4E68F4115671FAE00D5FA81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E68F4015671FAE00D5FA81 /* Foundation.framework */; };
@@ -186,6 +185,7 @@
 		C4E6903C1567207000D5FA81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E6903B1567207000D5FA81 /* SystemConfiguration.framework */; };
 		C4E6903E1567207C00D5FA81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E6903D1567207C00D5FA81 /* Security.framework */; };
 		C4E690401567208400D5FA81 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E6903F1567208400D5FA81 /* MessageUI.framework */; };
+		C4F1A28B157C589600B51653 /* Readme in Resources */ = {isa = PBXBuildFile; fileRef = C4F1A28A157C589600B51653 /* Readme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -509,7 +509,6 @@
 		C4D2A5DC1567DD15000A8EC9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		C4D2A5DE1567DD1C000A8EC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4D2A5E01567DD30000A8EC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C4D2A5F01567E09F000A8EC9 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 		C4D2A6041567EC3C000A8EC9 /* ShareKitDemoConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareKitDemoConfigurator.h; sourceTree = "<group>"; };
 		C4D2A6051567EC3C000A8EC9 /* ShareKitDemoConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareKitDemoConfigurator.m; sourceTree = "<group>"; };
 		C4E68F3A15671FAE00D5FA81 /* sharekitest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sharekitest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -529,6 +528,7 @@
 		C4E6903B1567207000D5FA81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C4E6903D1567207C00D5FA81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C4E6903F1567208400D5FA81 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C4F1A28A157C589600B51653 /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1373,6 +1373,7 @@
 		C4E68F2F15671FAD00D5FA81 = {
 			isa = PBXGroup;
 			children = (
+				C4F1A28A157C589600B51653 /* Readme */,
 				C4C69C911568F17100DA0A1E /* ShareKit */,
 				C4E68F4415671FAE00D5FA81 /* sharekitest */,
 				C4E68F3D15671FAE00D5FA81 /* Frameworks */,
@@ -1411,7 +1412,6 @@
 				C4C6B81B1568F4090076EEF7 /* test.png */,
 				C4D2A6041567EC3C000A8EC9 /* ShareKitDemoConfigurator.h */,
 				C4D2A6051567EC3C000A8EC9 /* ShareKitDemoConfigurator.m */,
-				C4D2A5F01567E09F000A8EC9 /* Readme */,
 				C4E68F4D15671FAE00D5FA81 /* G4AppDelegate.h */,
 				C4E68F4E15671FAE00D5FA81 /* G4AppDelegate.m */,
 				C4E68F5015671FAE00D5FA81 /* G4ViewController.h */,
@@ -1491,7 +1491,6 @@
 				C4E68F4915671FAE00D5FA81 /* InfoPlist.strings in Resources */,
 				C4E68F5515671FAE00D5FA81 /* G4ViewController_iPhone.xib in Resources */,
 				C4E68F5815671FAE00D5FA81 /* G4ViewController_iPad.xib in Resources */,
-				C4D2A5F11567E09F000A8EC9 /* Readme in Resources */,
 				C4C69E191568F1BA00DA0A1E /* SHKSharers.plist in Resources */,
 				C4C69E381568F1BA00DA0A1E /* ShareKit.bundle in Resources */,
 				C4C69E511568F1BA00DA0A1E /* SHKEvernote.md in Resources */,
@@ -1510,6 +1509,7 @@
 				C4C69E7B1568F1BA00DA0A1E /* small-button-normal@2x.png in Resources */,
 				C4C6B81C1568F4090076EEF7 /* test.png in Resources */,
 				C473C7741568FCFE005275A3 /* SHKLargeTextFieldBG.png in Resources */,
+				C4F1A28B157C589600B51653 /* Readme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
