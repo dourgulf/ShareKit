@@ -1,4 +1,6 @@
 1. 把ShareKit加到你的工程（可以删除sharekittest文件夹）
-2. 参考G4AppDelegate.m didFinishLaunchingWithOptions: 初始化配置数据
-3. 参考onShareTwitterClicked 指定使用某个service发送
-4. 参考onSharesClicked 用户选择使用那个service发送
+2. 将ShareKitDemoConfigurator.*加到项目中，根据你自己的appkey响应修改相关数据
+3. 参考G4AppDelegate.m didFinishLaunchingWithOptions: 初始化配置数据
+4. 参考onShareTwitterClicked 指定使用某个service发送
+5. 参考onSharesClicked 用户选择使用那个service发送
+6. ShareKit下面的Depends是一些第三方的库，如果和现有项目的重复的话，可以删除了。

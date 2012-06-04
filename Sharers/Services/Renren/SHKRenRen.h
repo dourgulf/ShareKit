@@ -28,7 +28,7 @@
 //
 
 #import "SHKSharer.h"
-#import "SHKFormControllerLargeTextField.h"
+#import "SHKCustomFormControllerLargeTextField.h"
 #import "ROConnect.h"
 
 

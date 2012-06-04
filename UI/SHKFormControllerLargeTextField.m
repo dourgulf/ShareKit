@@ -8,8 +8,6 @@
 
 @interface SHKFormControllerLargeTextField ()
 
-@property (nonatomic, retain) UILabel *counter;
-
 - (void)layoutCounter;
 - (void)updateCounter;
 - (void)save;
@@ -99,7 +97,6 @@
 }
 
 - (void)setupBarButtonItems {
-	UIBarButtonItem *backBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
 	self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                                                            target:self
                                                                                            action:@selector(cancel)] autorelease];
@@ -107,13 +104,6 @@
                                                                                style:UIBarButtonItemStyleDone
                                                                               target:self
                                                                               action:@selector(save)] autorelease];
-    NSArray *leftIBtns = [[NSArray alloc] initWithObjects:backBtn, nil];
-    if( [[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0 )
-        [self.navigationItem setLeftBarButtonItems:leftIBtns];
-    else
-        self.navigationItem.leftBarButtonItem = backBtn;
-    [leftIBtns release];
-    [backBtn release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C473C7741568FCFE005275A3 /* SHKLargeTextFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = C473C7731568FCFE005275A3 /* SHKLargeTextFieldBG.png */; };
 		C4C69E0B1568F1BA00DA0A1E /* DefaultSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C951568F1BA00DA0A1E /* DefaultSHKConfigurator.m */; };
 		C4C69E0C1568F1BA00DA0A1E /* SHKConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C971568F1BA00DA0A1E /* SHKConfiguration.m */; };
 		C4C69E0D1568F1BA00DA0A1E /* SHKOAuthSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C69C9B1568F1BA00DA0A1E /* SHKOAuthSharer.m */; };
@@ -188,6 +189,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C473C7731568FCFE005275A3 /* SHKLargeTextFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SHKLargeTextFieldBG.png; path = ../UI/SHKLargeTextFieldBG.png; sourceTree = "<group>"; };
 		C4C69C941568F1BA00DA0A1E /* DefaultSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSHKConfigurator.h; sourceTree = "<group>"; };
 		C4C69C951568F1BA00DA0A1E /* DefaultSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSHKConfigurator.m; sourceTree = "<group>"; };
 		C4C69C961568F1BA00DA0A1E /* SHKConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKConfiguration.h; sourceTree = "<group>"; };
@@ -635,6 +637,7 @@
 		C4C69CB51568F1BA00DA0A1E /* Customize UI */ = {
 			isa = PBXGroup;
 			children = (
+				C473C7731568FCFE005275A3 /* SHKLargeTextFieldBG.png */,
 				C4C69CB61568F1BA00DA0A1E /* SHKCustomActionSheet.h */,
 				C4C69CB71568F1BA00DA0A1E /* SHKCustomActionSheet.m */,
 				C4C69CB81568F1BA00DA0A1E /* SHKCustomFormController.h */,
@@ -1506,6 +1509,7 @@
 				C4C69E7A1568F1BA00DA0A1E /* small-button-normal.png in Resources */,
 				C4C69E7B1568F1BA00DA0A1E /* small-button-normal@2x.png in Resources */,
 				C4C6B81C1568F4090076EEF7 /* test.png in Resources */,
+				C473C7741568FCFE005275A3 /* SHKLargeTextFieldBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1747,6 +1751,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sharekitest/sharekitest-Prefix.pch";
 				INFOPLIST_FILE = "sharekitest/sharekitest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1758,6 +1763,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sharekitest/sharekitest-Prefix.pch";
 				INFOPLIST_FILE = "sharekitest/sharekitest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -25,7 +25,7 @@
 //
 //
 
-#define SHK_VERSION @"0.2.1"
+#define SHK_VERSION @"2.1"
 
 #import <Foundation/Foundation.h>
 #import "DefaultSHKConfigurator.h"

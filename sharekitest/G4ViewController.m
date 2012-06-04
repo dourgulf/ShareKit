@@ -9,6 +9,7 @@
 #import "G4ViewController.h"
 #import "SHKTwitter.h"
 #import "SHKSinaWeibo.h"
+#import "SHKFacebook.h"
 
 @interface G4ViewController ()
 
@@ -39,7 +40,7 @@
 
 - (IBAction)onSharesClicked:(id)sender{
     UIImage *image = [UIImage imageNamed:@"test.png"];
-    SHKItem *item = [SHKItem image:image title:@"发送图片的时候这里写微薄内容"];
+    SHKItem *item = [SHKItem image:image title:@"一二三四五一二三四五一二三四五一二三四五一二三四五一二三四五一二三四五一二三四五一二三四五一二三四五"];
     item.URL = [NSURL URLWithString:@"http://www.g4next.com/loooooooooooooooooooooooooooooooooooooooooooooooooooooooong.link"];
     // 选择发送到那个SNS
 	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
@@ -51,7 +52,7 @@
     UIImage *image = [UIImage imageNamed:@"test.png"];
     item.image = image;
     // 直接发送到特定SNS
-    [SHKTwitter shareItem:item];
+    [SHKFacebook shareItem:item];
     //[SHKSinaWeibo shareItem:item];
 }
 

@@ -332,13 +332,13 @@
  These values are used to define the default favorite sharers appearing on ShareKit's action sheet.
  */
 - (NSArray*)defaultFavoriteURLSharers {
-    return [NSArray arrayWithObjects:@"SHKDouban",@"SHKSinaWeibo",@"SHKNetEaseWeibo", nil];
+    return [NSArray arrayWithObjects:@"SHKSinaWeibo",@"SHKTwitter",@"SHKFacebook", nil];
 }
 - (NSArray*)defaultFavoriteImageSharers {
-    return [NSArray arrayWithObjects:@"SHKSinaWeibo",@"SHKNetEaseWeibo", nil];
+    return [NSArray arrayWithObjects:@"SHKSinaWeibo",@"SHKTwitter",@"SHKFacebook", nil];
 }
 - (NSArray*)defaultFavoriteTextSharers {
-    return [NSArray arrayWithObjects:@"SHKMail",@"SHKDouban",@"SHKSinaWeibo",@"SHKNetEaseWeibo", nil];
+    return [NSArray arrayWithObjects:@"SHKSinaWeibo",@"SHKTwitter",@"SHKFacebook", nil];
 }
 - (NSArray*)defaultFavoriteFileSharers {
     return [NSArray arrayWithObjects:@"SHKMail",@"SHKEvernote", nil];
@@ -357,8 +357,8 @@
     
     if ([NSStringFromClass([vc class]) isEqualToString:@"SHKFacebook"]) 
         return [UIColor colorWithRed:59.0f/255 green:89.0f/255 blue:152.0f/255 alpha:1];
-    
     return nil;
+    //return [UIColor clearColor];
 }
 
 

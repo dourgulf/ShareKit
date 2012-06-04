@@ -30,6 +30,7 @@
 #import "SHKRenRen.h"
 #import "SHKConfiguration.h"
 #import "NSMutableDictionary+NSNullsToEmptyStrings.h"
+#import "SHKCustomFormControllerLargeTextField.h"
 
 @implementation SHKRenRen
 @synthesize renren = _renren;
@@ -136,7 +137,7 @@ static SHKRenRen *sharedRenRen = nil;
 
 - (void)showRenRenForm
 {
-	SHKFormControllerLargeTextField *rootView = [[SHKFormControllerLargeTextField alloc] initWithNibName:nil 
+	SHKCustomFormControllerLargeTextField *rootView = [[SHKCustomFormControllerLargeTextField alloc] initWithNibName:nil 
                                                                                                   bundle:nil 
                                                                                                 delegate:self];	
 	
@@ -153,7 +154,7 @@ static SHKRenRen *sharedRenRen = nil;
 	[[SHK currentHelper] showViewController:self];	
 }
 
-- (void)sendForm:(SHKFormControllerLargeTextField *)form
+- (void)sendForm:(SHKCustomFormControllerLargeTextField *)form
 {	
 	[item setCustomValue:form.textView.text forKey:@"status"];
 	[self tryToSend];

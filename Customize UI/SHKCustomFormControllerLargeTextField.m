@@ -30,6 +30,47 @@
 
 @implementation SHKCustomFormControllerLargeTextField
 
-// See http://getsharekit.com/customize/ for additional information on customizing
+- (void)loadView 
+{
+	[super loadView];
+    CGFloat imageSize = 100.0;
+    CGRect textFrame = self.view.bounds;
+	self.view.backgroundColor = [UIColor grayColor];
+    
+    // background image view
+    UIImage *backgroundImage = [UIImage imageNamed:@"SHKLargeTextFieldBG.png"];
+	UIImageView *backgroundView = [[[UIImageView alloc] initWithImage:backgroundImage] autorelease];
+    [self.view addSubview:backgroundView];
+    textFrame = backgroundView.bounds;
 
+    textFrame.size.height -= imageSize;
+    textFrame.size.width = textFrame.size.width*2.0/3.0;
+	self.textView = [[[UITextView alloc] initWithFrame:textFrame] autorelease];
+	self.textView.delegate = self;
+	self.textView.font = [UIFont systemFontOfSize:15];
+	self.textView.backgroundColor = [UIColor clearColor];	
+    self.textView.editable = NO;
+	[backgroundView addSubview:self.textView];
+    
+    if (self.image != nil) {
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:self.image];
+        CGRect imageFrame;
+        imageFrame.origin.x = textFrame.size.width;
+        imageFrame.origin.y = textFrame.origin.y+10;
+        imageFrame.size.width = 96;
+        imageFrame.size.height = 96;
+        imageView.frame = imageFrame;
+        [self.view addSubview:imageView];
+    }
+}
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    CGRect textFrame = self.view.frame;
+    NSLog(@"(%f,%f)", textFrame.size.width, textFrame.size.height);
+}
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    CGRect textFrame = self.view.frame;
+    NSLog(@"(%f,%f)", textFrame.size.width, textFrame.size.height);
+}
 @end
