@@ -119,10 +119,15 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 {
 	BOOL result = YES;
 	
+    // all URL must be shorten
+	if (item.URL != nil)
+    {
+        result = [self shortenURL];
+    }
+    
 	if (item.shareType == SHKShareTypeURL)
 	{
-		BOOL isURLAlreadyShortened = [self shortenURL];
-		result = isURLAlreadyShortened;
+        // do nothing!
 	}
 	
 	else if (item.shareType == SHKShareTypeImage)
@@ -230,25 +235,19 @@ static NSString *const kSHKTencentWeiboUserInfo = @"kSHKTencentWeiboUserInfo";
 - (void)shortenURLFinished:(SHKRequest *)aRequest
 {
 	[[SHKActivityIndicator currentIndicator] hide];
-    
-    @try 
-    {
-        NSArray *result = [[aRequest getResult] objectFromJSONString];
+    NSArray *result = [[aRequest getResult] objectFromJSONString];
+    if ([result isKindOfClass:[NSArray class]]) {
         item.URL = [NSURL URLWithString:[[result objectAtIndex:0] objectForKey:@"url_short"]];
     }
-    @catch (NSException *exception) 
-	{
-		// TODO - better error message
-		[[[[UIAlertView alloc] initWithTitle:SHKLocalizedString(@"Shorten URL Error")
-									 message:SHKLocalizedString(@"We could not shorten the URL.")
-									delegate:nil
-						   cancelButtonTitle:SHKLocalizedString(@"Continue")
-						   otherButtonTitles:nil] autorelease] show];
+    else {
+        if (!quiet) {
+            NSLog(@"ShortenURL failed:%@", result);
+        }
     }
     
-    [item setCustomValue:[NSString stringWithFormat:@"%@: %@", item.title, item.URL.absoluteString] 
+    [item setCustomValue:[NSString stringWithFormat:@"%@ %@", item.title ? item.title : item.text, item.URL.absoluteString]
                   forKey:@"status"];
-    
+	
 	[super share];
 }
 

@@ -725,7 +725,7 @@
 
     if ([self.shareDelegate respondsToSelector:@selector(sharerFinishedSending:)])
 		[self.shareDelegate performSelector:@selector(sharerFinishedSending:) withObject:self];
-	}
+}
 
 - (void)shouldReloginWithPendingAction:(SHKSharerPendingAction)action
 {

@@ -20,7 +20,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(onSendSuccess)
+                                                 name:@"SHKSendDidFinish"
+                                               object:nil];
+}
+- (void)onSendSuccess {
+    NSLog(@"send success notification");
 }
 
 - (void)viewDidUnload
@@ -28,6 +34,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -52,8 +60,7 @@
     UIImage *image = [UIImage imageNamed:@"test.png"];
     item.image = image;
     // 直接发送到特定SNS
-    [SHKFacebook shareItem:item];
-    //[SHKSinaWeibo shareItem:item];
+    [SHKSinaWeibo shareItem:item];
 }
 
 

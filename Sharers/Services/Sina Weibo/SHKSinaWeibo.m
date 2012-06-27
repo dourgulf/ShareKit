@@ -131,9 +131,11 @@ static NSString *const kSHKSinaWeiboUserInfo = @"kSHKSinaWeiboUserInfo";
 	BOOL result = YES;
     
     // all URL must be shorten
-	if (item.URL != nil) {
+	if (item.URL != nil) 
+    {
         result = [self shortenURL];
     }
+    
 	if (item.shareType == SHKShareTypeURL)
 	{
         // do nothing!
@@ -334,20 +336,14 @@ static NSString *const kSHKSinaWeiboUserInfo = @"kSHKSinaWeiboUserInfo";
 - (void)shortenURLFinished:(SHKRequest *)aRequest
 {
 	[[SHKActivityIndicator currentIndicator] hide];
-        
-    @try 
-    {
-        NSArray *result = [[aRequest getResult] objectFromJSONString];
+    NSArray *result = [[aRequest getResult] objectFromJSONString];
+    if ([result isKindOfClass:[NSArray class]]) {
         item.URL = [NSURL URLWithString:[[result objectAtIndex:0] objectForKey:@"url_short"]];
     }
-    @catch (NSException *exception) 
-    {
-        // TODO - better error message
-		[[[[UIAlertView alloc] initWithTitle:SHKLocalizedString(@"Shorten URL Error")
-									 message:SHKLocalizedString(@"We could not shorten the URL.")
-									delegate:nil
-						   cancelButtonTitle:SHKLocalizedString(@"Continue")
-						   otherButtonTitles:nil] autorelease] show];
+    else {
+        if (!quiet) {
+            NSLog(@"ShortenURL failed:%@", result);
+        }
     }
     
     [item setCustomValue:[NSString stringWithFormat:@"%@ %@", item.title ? item.title : item.text, item.URL.absoluteString] 
@@ -508,7 +504,7 @@ static NSString *const kSHKSinaWeiboUserInfo = @"kSHKSinaWeiboUserInfo";
 		// no ops
 	} else {
 		[body appendData:[[NSString stringWithFormat:@"--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
-		[body appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"status\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+		[body appendData:[@"Content-Disposition: form-data; name=\"status\"\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
 		[body appendData:[[item customValueForKey:@"status"] dataUsingEncoding:NSUTF8StringEncoding]];
 		[body appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];	
 	}
