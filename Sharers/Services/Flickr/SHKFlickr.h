@@ -31,7 +31,7 @@
 #import "ObjectiveFlickr.h"
 #import "SHKFormOptionController.h"
 
-@interface SHKFlickr : SHKSharer<	
+@interface SHKFlickr : SHKSharer<	OFFlickrAPIRequestDelegate,
 									SHKOAuthViewDelegate,
 									SHKFormOptionControllerOptionProvider> {
 	
