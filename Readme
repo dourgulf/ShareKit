@@ -1,5 +1,12 @@
+ShareKit 是从ShareKit派生出来的，因为项目需要做了一些改动：
+A、对如下Shareer：SinaWeibo，Facebook，Twitter，TencentWeibo这几个实现改成：
+    只要有设置URL，则都添加URL到发布内容里面（并且Shortten），
+    只要设置了Image，则都按照Image方式共享。
+B、将一些第三方的依赖直接添加到工程里头了，这样使用起来更加方便一些。
+
+简单的使用方法介绍：
 1. 把ShareKit加到你的工程（可以删除sharekittest文件夹）
-2. 将ShareKitDemoConfigurator.*加到项目中，根据你自己的appkey响应修改相关数据
+2. 将ShareKitDemoConfigurator.*加到项目中，根据你自己的appkey相应修改相关数据
 3. 参考G4AppDelegate.m didFinishLaunchingWithOptions: 初始化配置数据
 4. 参考onShareTwitterClicked 指定使用某个service发送
 5. 参考onSharesClicked 用户选择使用那个service发送
@@ -21,3 +28,10 @@
 </array>
 </plist>
 可以把key修改成 ”URL types“ 这样会有更加明确意义的显示信息，不明白的参考本工程的*-Info.plist最后一项
+
+
+TODO：
+A、其实希望将ShareKit现在这种根据共享类型发布微薄的工作方式彻底改了，
+    对title，text，URL，image，这些属性，只要是设置内容的就应该发布出去。
+B、OAuth 2.0
+    
