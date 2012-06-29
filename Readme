@@ -21,12 +21,15 @@ B、将一些第三方的依赖直接添加到工程里头了，这样使用起�
 		<string></string>
 		<key>CFBundleURLSchemes</key>
 		<array>
-			<string>fb232705466797125</string>
-			<string>app://flickr</string>
+			<string>fb{facebookAppId}{facebookLocalAppId}</string>
+			<string>app://{facebookLocalAppId}</string>
 		</array>
 	</dict>
 </array>
 </plist>
+其中item0的内容是fb{facebookAppId}{facebookLocalAppId},
+{facebookAppId}用ShareKitDemoConfigurator中的配置项facebookLocalAppId的内容替换。
+{facebookLocalAppId}用ShareKitDemoConfigurator中的配置项facebookLocalAppId的内容替换。
 可以把key修改成 ”URL types“ 这样会有更加明确意义的显示信息，不明白的参考本工程的*-Info.plist最后一项
 
 

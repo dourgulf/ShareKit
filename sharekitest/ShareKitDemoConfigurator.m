@@ -192,7 +192,7 @@
 }
 
 - (NSString*)facebookLocalAppId {
-	return @"";
+	return @"sharekitest";
 }
 // Read It Later - http://readitlaterlist.com/api/signup/ 
 - (NSString*)readItLaterKey {

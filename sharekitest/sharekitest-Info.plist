@@ -49,7 +49,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb232705466797125</string>
-				<string>app://flickr</string>
+				<string>app://sharekitest</string>
 			</array>
 		</dict>
 	</array>
